@@ -1,0 +1,24 @@
+{
+  "name": "fetch-data-utility",
+  "version": "1.0.0",
+  "description": "Professional fetch wrapper with retries, timeout, and type safety",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "example": "ts-node src/examples/user-profile.example.ts",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean"
+  },
+  "keywords": ["fetch", "http-client", "typescript", "retry", "timeout"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "nodemon": "^3.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}
